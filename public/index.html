@@ -117,6 +117,8 @@ a:visited {
         color: #eee8d5;
         border-radius: 8px;
         background-color: #003541;
+        display: flex;
+        flex-direction: column;
       }
       
       #section-4 .child {
@@ -423,18 +425,17 @@ a:visited {
 
         <hr/>
         <div class="code">
-          const title = document.querySelector('#title')<hr/>
+          const title = document.querySelector('#title')
+          console.log('id로 선택', title)
 
-          console.log('id로 선택', title)<hr/>
+          const content = document.querySelector('.content')
+          console.log('class로 선택', content)
 
-          const content = document.querySelector('.content')<hr/>
-          console.log('class로 선택', content)<hr/>
+          const footer = document.querySelector('footer')
+          console.log('tag로 선택', footer)
 
-          const footer = document.querySelector('footer')<hr/>
-          console.log('tag로 선택', footer)<hr/>
-
-          const button = document.querySelector('[data-test="1"]')<hr/>
-          console.log('기타 속성으로 선택', button)<hr/>
+          const button = document.querySelector('[data-test="1"]')
+          console.log('기타 속성으로 선택', button)
 
         </p>
       </section>
