@@ -422,18 +422,19 @@ a:visited {
         <button data-test="1">버튼입니다.</button>
 
         <hr/>
-        <p class="code">
-          const title = document.querySelector('#title')
-          console.log('id로 선택', title)
+        <div class="code">
+          const title = document.querySelector('#title')<hr/>
 
-          const content = document.querySelector('.content')
-          console.log('class로 선택', content)
+          console.log('id로 선택', title)<hr/>
 
-          const footer = document.querySelector('footer')
-          console.log('tag로 선택', footer)
+          const content = document.querySelector('.content')<hr/>
+          console.log('class로 선택', content)<hr/>
 
-          const button = document.querySelector('[data-test="1"]')
-          console.log('기타 속성으로 선택', button)
+          const footer = document.querySelector('footer')<hr/>
+          console.log('tag로 선택', footer)<hr/>
+
+          const button = document.querySelector('[data-test="1"]')<hr/>
+          console.log('기타 속성으로 선택', button)<hr/>
 
         </p>
       </section>
@@ -474,10 +475,9 @@ a:visited {
         
         <hr/>
 
-        <p class="code">
+        <div class="code">
           const parent = document.querySelector('.parent')
           console.log(parent)
-
           const first = parent.firstChild
           const last = parent.lastChild
           console.log(first, last)
@@ -493,7 +493,7 @@ a:visited {
           const children = parent.children
           console.log(childNodes, children)
 
-        </p>
+        </div>
       </section>
       <section id="section-4">
         <div class="section-title">DOM 트리 탐색 2</div>
